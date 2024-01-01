@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+    --main-color-1: #b5ea8c;
+    --main-color-2: #94bf73;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+main {
+    background: var(--main-color-2);
+}
+
+.primary-section {
+    background: var(--main-color-1);
+    height: 70vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.header,
+.footer {
+    height: 15vh;
+}
+
+.selection,
+.tip {
+    background: var(--main-color-2);
+    justify-content: space-evenly;
+    padding: 2% 10%;
+}
+
+.tip > * {
+    filter: invert(1) contrast(1);
+}
+
+.selection-item:hover,
+.close-button:hover {
+    cursor: pointer;
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+}
+
+@media screen and (min-width: 750px) {
+    .selection,
+    .tip {
+        margin: 0 20%;
+    }
+}
+
+/* Typography */
+
+body,
+button {
+	font: 150% 'Amatic SC', Arial;
+}
+
+h1 {
+    font-size: 170%;
+}
+
+p {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.selection-item {
+    text-transform: capitalize;
+}
